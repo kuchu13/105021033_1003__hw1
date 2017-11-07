@@ -82,17 +82,17 @@ public class MainFrame extends JFrame {
             }
         });
 
-//        jbtn4.addActionListener(new AbstractAction() {
-//            @Override
-//            public void actionPerformed(ActionEvent e) {
-//                char data[] =jtaL.getText().toCharArray();
-//                int len =data.length,Key =Integer.parseInt(jtfKey.getText());
-//                for(int i = 0;i<len; i++){
-//                    data[i] += Key;
-//                }
-//                jtaR.setText(new String(data));
-//            }
-//        });
+        jbtn4.addActionListener(new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                char data[] =jtaL.getText().toCharArray();
+                int len =data.length,Key =Integer.parseInt(jtfKey.getText());
+                for(int i = 0;i<len; i++){
+                    data[i] -= Key;
+                }
+                jtaR.setText(new String(data));
+            }
+        });
 
         jbtn5.addActionListener(new AbstractAction() {
             @Override
